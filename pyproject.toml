@@ -7,7 +7,7 @@ packages = ["src/test_panda_pypi"]
 
 [project]
 name = "test_panda_pypi"
-version = "0.0.1"
+version = "0.0.3"
 authors = [{ name = "Shawn Hu", email = "shawnhu97@gmail.com" }]
 description = "A small example package of adding 2 numbers together"
 readme = "README.md"
@@ -21,3 +21,6 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/TheFatPanda97/test-pypi"
 Issues = "https://github.com/TheFatPanda97/test-pypi/issues"
+
+[project.scripts]
+test-panda = "test_panda_pypi:main"
