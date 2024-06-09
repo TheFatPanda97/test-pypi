@@ -5,9 +5,12 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["src/test_panda_pypi"]
 
+[tool.hatch.version]
+path = "src/test_panda_pypi/__about__.py"
+
 [project]
 name = "test_panda_pypi"
-version = "0.0.1"
+dynamic = ["version"]
 authors = [{ name = "Shawn Hu", email = "shawnhu97@gmail.com" }]
 description = "A small example package of adding 2 numbers together"
 readme = "README.md"
