@@ -3,9 +3,9 @@ import argparse
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Add two integers.")
-    parser.add_argument("num1", type=int, help="First integer")
-    parser.add_argument("num2", type=int, help="Second integer")
+    parser = argparse.ArgumentParser(description="Add two numbers.")
+    parser.add_argument("num1", type=float, help="First number")
+    parser.add_argument("num2", type=float, help="Second number")
     args = parser.parse_args()
 
     result = add_int(args.num1, args.num2)

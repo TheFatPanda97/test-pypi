@@ -1,2 +1,2 @@
-def add_int(a: int, b: int) -> int:
+def add_int(a: float, b: float) -> float:
     return a + b
